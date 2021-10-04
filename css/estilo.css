@@ -1,6 +1,6 @@
 body
 {
-    background-color: aquamarine;
+    background-color: rgb(95, 235, 165);
 }
 
 img
@@ -30,8 +30,8 @@ footer
 {
     width: 15%;
     height: 20px;
-    border-color: aquamarine;
-    background-color: rgb(36, 192, 235);
+    border-color: rgb(95, 235, 165);
+    background-color: rgb(57, 136, 96);
     color: black;
     text-align: center;
 }
@@ -42,8 +42,8 @@ footer
     height: 40px;
     width: 15%;
     font-size: x-large;
-    border-color: aquamarine;
-    background-color: rgb(36, 192, 235);
+    border-color: rgb(95, 235, 165);
+    background-color: rgb(57, 136, 96);
     color: black;
 
 }
@@ -52,9 +52,9 @@ footer
     margin-left: 35%;
     width: 30%;
     height: 140px;
-    border-color: aquamarine;
+    border-color: rgb(95, 235, 165);
     color: black;
-    background-color: rgb(36, 192, 235);
+    background-color: rgb(57, 136, 96);
     text-align: center;
     font-size: medium;
     align-items: justify;

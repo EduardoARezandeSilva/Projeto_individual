@@ -32,7 +32,6 @@ function mascara_tempo()
 
 	if (tempo_formatado[0] == ":" | tempo_formatado[1] == ":" | tempo_formatado[3] == ":" | tempo_formatado[4] == ":")
 	{
-
 	}
 	else
 	{
@@ -48,7 +47,15 @@ function mascara_tempo()
 		{
 			if (tempo_formatado[2] >= 6) 
 			{
-				document.getElementById("tempo").value = (parseInt(tempo_formatado.slice(0,2)) + 1 ) + ":" + (parseInt(tempo_formatado[2]) - 6);
+				document.getElementById("tempo").value = tempo_formatado.slice(0,2) + ":";
+			}
+		}
+
+		if (tempo_formatado[3] != undefined)
+		{
+			if (tempo_formatado[3] >= 6) 
+			{
+				document.getElementById("tempo").value = tempo_formatado.slice(0,2) + ":";
 			}
 		}
 
@@ -64,7 +71,15 @@ function mascara_tempo()
 		{
 			if (tempo_formatado[5] >= 6) 
 			{
-				document.getElementById("tempo").value = tempo_formatado.slice(0,2) + ":" + (parseInt(tempo_formatado.slice(3,5)) + 1 ) + ":" + (parseInt(tempo_formatado[5]) - 6);
+				document.getElementById("tempo").value = tempo_formatado.slice(0,2) + ":" + tempo_formatado.slice(3,5) + ":";
+			}
+		}
+
+		if (tempo_formatado[6] != undefined)
+		{
+			if (tempo_formatado[6] >= 6) 
+			{
+				document.getElementById("tempo").value = tempo_formatado.slice(0,2) + ":" + tempo_formatado.slice(3,5) + ":";
 			}
 		}
 	}
