@@ -18,7 +18,7 @@ function calcular()
 
 		const cal = (velocidade * peso * 0.0175 * min).toFixed(0)
 
-        resulatdo.textContent = nome + " você percorreu uma distancia de " + distancia + "Km em " + tempo + " sua velocidade media foi de " + velocidade + "Km/h o que corresponde a um pace de " + pace + "min/Km com o peso de " + peso + "Kg você queimou " + cal + "cal"
+        resulatdo.textContent = nome + " você percorreu uma distancia de " + distancia + "Km em " + (parseInt(tempo.slice(0,2))) + "horas" + (parseInt(tempo.slice(3,5))) + "minutos" + (parseInt(tempo.slice(6))) + "segundos sua velocidade media foi de " + velocidade + "Km/h o que corresponde a um pace de " + pace + "min/Km com o peso de " + peso + "Kg você queimou " + cal + "cal"
     }
     else
     {
